@@ -3,10 +3,12 @@
   font-size:18px;
 }
 #home{
-  width:75%;
-  height:50%;
+  width:80%;
+  height:40%;
+  /* height:500px; */
   margin-right: auto;
   margin-left: auto;
+  object-fit: cover;
 }
 #about{
   display:flex;
@@ -64,6 +66,11 @@
   flex-direction: row;
   
 }
+.card-header{
+  font-family: 'EB Garamond', serif;
+  font-weight:700;
+  font-size:20px;
+}
 .card-title{
   font-family: 'EB Garamond', serif;
 }
@@ -88,21 +95,54 @@
   font-size:30px;
   text-align:center;
 }
+#Coordinators_title{
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight:700;
+  font-size:30px;
+  text-align:center;
+}
+
 #contact_title{
   font-family: 'Cinzel Decorative', cursive;
   font-weight:700;
   font-size:30px;
   text-align:center;
 }
+
+#Fest_cords{
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+ 
+}
+#org_cards{
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* justify-content: center; */
+  display: flex;
+  
+}
+#cult-img{
+ width: 60%;
+ height: 400px;
+ object-fit: cover;
+}
+#video-content{
+  width: 60%;
+ height: 400px;
+}
+
 @media only screen and (max-width: 600px) {
   #about{
     display:flex;
     flex-direction: column;
     
   }
+  
   #technical_contents{
     display:flex;
     flex-direction: column;
+   /* text-align: center; */
     margin-top:2rem;
 
   }
@@ -112,9 +152,28 @@
     margin-top:2rem;
 
   }
+  #org_cards{
+    flex-direction: column;
+  }
   .card{
     margin-left: auto;
     margin-left: auto;
     margin-top: 2rem;
+  }
+  #Fest_cords{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+   
+  }
+  
+  #cult-img{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+   }
+   #video-content{
+    width: 60%;
+   height: 200px;
   }
 }
